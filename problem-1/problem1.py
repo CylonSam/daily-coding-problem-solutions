@@ -1,10 +1,15 @@
-numbers = [10, 15, 3, 7]
-k = 17
+# Exemple given.
+# numbers = [10, 15, 3, 7]
+# k = 17
 
-# TODO: Implementar a entrada de uma lista de numeros
-# numbers = input("Digite uma lista de numeros: ")
-# print(numbers)
-# k = input("Digite um target: ")
+numbers = []
+numbersString = input("Type a list of numbers (separated by a comma): ")
+numbersStringList = numbersString.split()
+
+for n in numbersStringList:
+  numbers.append(int(n))
+
+k = int(input("Type target number: "))
 
 result = False
 
